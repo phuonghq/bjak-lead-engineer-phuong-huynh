@@ -1,0 +1,302 @@
+{
+  "ingested_at": "2026-09-16",
+  "sources": [
+    {
+      "id": "cv",
+      "type": "cv",
+      "as_of": "2026-08",
+      "provenance": "Converted from the candidate CV file PHUONG HUYNH_8.2026.docx (August 2026). The docx is not committed. Phone, email, WhatsApp/Zalo contact, and neighborhood-level address were redacted. No employers, titles, or dates were added beyond that file.",
+      "path": "knowledge/sources/cv.md"
+    },
+    {
+      "id": "projects",
+      "type": "projects",
+      "as_of": "2026-08",
+      "provenance": "Project names and bullets copied from PHUONG HUYNH_8.2026.docx only. Not a separate portfolio. Nothing was added that the CV did not state.",
+      "path": "knowledge/sources/projects.md"
+    },
+    {
+      "id": "working-style",
+      "type": "working-style",
+      "as_of": "2026-08",
+      "provenance": "Working-style statements quoted from PHUONG HUYNH_8.2026.docx role bullets only. Not a self-essay. No claimed values were invented.",
+      "path": "knowledge/sources/working-style.md"
+    }
+  ],
+  "facts": {
+    "as_of": "2026-08",
+    "roles": [
+      {
+        "employer": "Agoda",
+        "title": "Senior Software Engineer",
+        "start": "2023-07",
+        "end": "unspecified",
+        "source_id": "cv",
+        "location": "Singapore",
+        "note": "CV lists 07/2023 and a blank end date. It does not write Present."
+      },
+      {
+        "employer": "NCS",
+        "title": "Senior Software Engineer",
+        "start": "2022-06",
+        "end": "2023-06",
+        "source_id": "cv",
+        "location": "Singapore"
+      },
+      {
+        "employer": "Alibaba Group",
+        "title": "Senior Software Engineer",
+        "start": "2021-03",
+        "end": "2022-06",
+        "source_id": "cv",
+        "location": "Vietnam"
+      },
+      {
+        "employer": "VinID",
+        "title": "Backend Developer",
+        "start": "2019-07",
+        "end": "2021-03",
+        "source_id": "cv",
+        "location": "Vietnam"
+      },
+      {
+        "employer": "Quoine",
+        "title": "Software Engineer",
+        "start": "2017-10",
+        "end": "2019-07",
+        "source_id": "cv",
+        "location": "Vietnam",
+        "note": "CV also states promoted to Mid-level Engineer in 03/2019 under this same role heading."
+      }
+    ],
+    "education": [
+      {
+        "institution": "HCM University of Technology (VNU)",
+        "degree": "B.S.E. in Computer Science & Engineering",
+        "start": "2013-09",
+        "end": "2017-12",
+        "source_id": "cv"
+      }
+    ],
+    "experience_claims": [
+      {
+        "claim": "8+ years",
+        "source_id": "cv",
+        "heading": "Summary",
+        "note": "Copied from the CV summary. No second tenure figure exists in this corpus."
+      }
+    ]
+  },
+  "chunks": [
+    {
+      "cite_id": "cv#summary",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Summary",
+      "text": "Summary\n\nSenior Software Engineer with 8+ years of experience building high-throughput, distributed backend systems for fintech, payments, loyalty/rewards platforms across Southeast Asia. Experienced in event-driven architectures (Kafka), transactional correctness (idempotency, concurrency control) and observability. Latest role is Senior Software Engineer at Agoda from 07/2023 (end date blank).",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "cv#senior-software-engineer-agoda",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Senior Software Engineer — Agoda",
+      "text": "Senior Software Engineer — Agoda\n\nSingapore | 07/2023 –\n\nSupply Platform (Supplier onboarding & platform services)\n\n- Optimized SQL Server hot-path queries for high-volume onboarding APIs, reducing database CPU utilization by 25% and improving API throughput by 2x.\n- Built comprehensive observability for Scala microservices using Prometheus/Micrometer and Grafana, establishing critical SLO alerts integrated directly into Slack.\n- Implemented resilient traffic-management patterns, including rate limiting and circuit breakers, preventing cascading failures across downstream partner services.\n- Delivered compliance-grade audit trails and real-time supplier notification pipelines handling millions of system events daily.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "cv#senior-software-engineer-ncs",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Senior Software Engineer — NCS",
+      "text": "Senior Software Engineer — NCS\n\nSingapore | 06/2022 – 06/2023\n\nRewards Platform\n\n- Technically owned the loyalty campaign platform across Kafka consumers and scheduled jobs, defining strict correctness guarantees for at-least-once delivery (idempotency, replay safety, and multi-topic concurrency models).\n- Improved consumer resilience and eliminated batch-stall behaviors by re-architecting the acknowledgment and retry strategy, ensuring predictable recovery under partial failures.\n- Designed a cross-pod, per-user serialization mechanism using distributed locks and database safety nets, preventing duplicate mission states and eliminating race conditions.\n- Built and operated end-to-end observability dashboards using Prometheus + ELK to monitor consumer lag, throughput, and error rates, reducing incident triage time by 40%.\n- Tuned Kubernetes Horizontal Pod Autoscaler (HPA)\n- Mentored engineers through technical training, code reviews, and pair programming, knowledge sharing.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "cv#senior-software-engineer-alibaba-group",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Senior Software Engineer — Alibaba Group",
+      "text": "Senior Software Engineer — Alibaba Group\n\nVietnam | 03/2021 – 06/2022\n\nAliPay Integration for Lazada / DARAZ (6 SEA markets)\n\n- Designed and integrated core payment APIs (createOrder, queryBalance, payment, refund) across 6 Southeast Asian markets, handling high-TPS transaction volumes.\n- Implemented strict retry and idempotency patterns for timeouts and network replays, reducing duplicate-processing risks and financial discrepancies to zero in core payment flows.\n- Modeled complex transaction states and asynchronous settlement workflows to ensure seamless third-party payment integration and eventual consistency.\n- Collaborated with cross-functional teams to translate business requirements into technical roadmaps.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "cv#backend-developer-vinid",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Backend Developer — VinID",
+      "text": "Backend Developer — VinID\n\nVietnam | 07/2019 – 03/2021\n\nDistributed Resident-Service Platform\n\n- Built distributed backend services supporting resident-service platforms and operational workflows, successfully scaling the system to support hundreds of thousands of daily active users.\n- Implemented ChatOps automation via Slack-based operational notifications and automated service-monitoring integrations to accelerate infrastructure alerting.\n- Supported Kubernetes deployments, Helm chart management, and production environment configurations.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "cv#software-engineer-quoine",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Software Engineer — Quoine",
+      "text": "Software Engineer — Quoine\n\nVietnam | 10/2017 – 07/2019\n\nCrypto Exchange Platform\n\n- Implemented high-security exchange APIs and operational tooling for KYC, automated risk rating, and maker-checker approval flows for financial deposits and withdrawals.\n- Built robust reconciliation systems validating internal subledger balances against on-chain blockchain states to ensure absolute custody integrity.\n- Delivered asynchronous settlement and tamper-proof audit-trail workflows for operationally sensitive digital wallet processing.\n- Promoted to Mid-level Engineer (03/2019)",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "cv#skills",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Skills",
+      "text": "Skills\n\n- Languages: Java 21, Scala, Ruby, Node.js\n- Backend: Spring Boot, Spring Cloud, Spring Batch, Akka, Ruby on Rails\n- Data & Databases: Redis, MongoDB, Elasticsearch, PostgreSQL, MySQL/MariaDB, SQL Server, BigQuery\n- Messaging & Event-Driven: Kafka, RabbitMQ\n- Infrastructure: Docker, Kubernetes, AWS, GCP, OpenShift\n- Observability: Prometheus, Grafana, ELK Stack, New Relic, ES\n- CI/CD: GitHub Actions, GitLab CI, Jenkins, CircleCI",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "cv#education",
+      "source_id": "cv",
+      "type": "cv",
+      "heading": "Education",
+      "text": "Education\n\nDegree: B.S.E. in Computer Science & Engineering (studied at HCM University of Technology (VNU), Ho Chi Minh City). 09/2013 – 12/2017. GPA: 8.14 / 10.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "projects#supply-platform-agoda",
+      "source_id": "projects",
+      "type": "projects",
+      "heading": "Supply Platform (Agoda)",
+      "text": "Supply Platform (Agoda)\n\nSupplier onboarding & platform services. Optimized SQL Server hot-path queries for high-volume onboarding APIs, reducing database CPU utilization by 25% and improving API throughput by 2x. Built observability for Scala microservices using Prometheus/Micrometer and Grafana with SLO alerts in Slack. Implemented rate limiting and circuit breakers. Delivered compliance-grade audit trails and real-time supplier notification pipelines handling millions of system events daily.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "projects#rewards-platform-ncs",
+      "source_id": "projects",
+      "type": "projects",
+      "heading": "Rewards Platform (NCS)",
+      "text": "Rewards Platform (NCS)\n\nLoyalty campaign platform across Kafka consumers and scheduled jobs, with correctness guarantees for at-least-once delivery (idempotency, replay safety, and multi-topic concurrency models). Re-architected acknowledgment and retry strategy. Cross-pod, per-user serialization using distributed locks and database safety nets. Observability dashboards with Prometheus + ELK. Tuned Kubernetes Horizontal Pod Autoscaler (HPA).",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "projects#alipay-integration-for-lazada-daraz-alibaba-group",
+      "source_id": "projects",
+      "type": "projects",
+      "heading": "AliPay Integration for Lazada / DARAZ (Alibaba Group)",
+      "text": "AliPay Integration for Lazada / DARAZ (Alibaba Group)\n\nAliPay integration for Lazada / DARAZ across 6 SEA markets. Core payment APIs: createOrder, queryBalance, payment, refund. Retry and idempotency for timeouts and network replays. Complex transaction states and asynchronous settlement workflows for third-party payment integration and eventual consistency.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "projects#distributed-resident-service-platform-vinid",
+      "source_id": "projects",
+      "type": "projects",
+      "heading": "Distributed Resident-Service Platform (VinID)",
+      "text": "Distributed Resident-Service Platform (VinID)\n\nDistributed backend services for resident-service platforms and operational workflows, scaled to hundreds of thousands of daily active users. ChatOps via Slack-based operational notifications. Kubernetes deployments, Helm chart management, and production environment configurations.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "projects#crypto-exchange-platform-quoine",
+      "source_id": "projects",
+      "type": "projects",
+      "heading": "Crypto Exchange Platform (Quoine)",
+      "text": "Crypto Exchange Platform (Quoine)\n\nHigh-security exchange APIs and operational tooling for KYC, automated risk rating, and maker-checker approval flows for financial deposits and withdrawals. Reconciliation of internal subledger balances against on-chain blockchain states. Asynchronous settlement and tamper-proof audit-trail workflows for digital wallet processing.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "working-style#technical-ownership",
+      "source_id": "working-style",
+      "type": "working-style",
+      "heading": "Technical ownership",
+      "text": "Technical ownership\n\nAt NCS: technically owned the loyalty campaign platform across Kafka consumers and scheduled jobs, defining strict correctness guarantees for at-least-once delivery (idempotency, replay safety, and multi-topic concurrency models).",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "working-style#mentoring",
+      "source_id": "working-style",
+      "type": "working-style",
+      "heading": "Mentoring",
+      "text": "Mentoring\n\nAt NCS: mentored engineers through technical training, code reviews, and pair programming, knowledge sharing.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "working-style#cross-functional-collaboration",
+      "source_id": "working-style",
+      "type": "working-style",
+      "heading": "Cross-functional collaboration",
+      "text": "Cross-functional collaboration\n\nAt Alibaba Group: collaborated with cross-functional teams to translate business requirements into technical roadmaps.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "working-style#observability-and-operations",
+      "source_id": "working-style",
+      "type": "working-style",
+      "heading": "Observability and operations",
+      "text": "Observability and operations\n\nAt Agoda: built comprehensive observability for Scala microservices using Prometheus/Micrometer and Grafana, establishing critical SLO alerts integrated directly into Slack. Implemented rate limiting and circuit breakers to prevent cascading failures.\n\nAt NCS: built and operated end-to-end observability dashboards using Prometheus + ELK to monitor consumer lag, throughput, and error rates, reducing incident triage time by 40%.\n\nAt VinID: implemented ChatOps automation via Slack-based operational notifications and automated service-monitoring integrations to accelerate infrastructure alerting. Supported Kubernetes deployments, Helm chart management, and production environment configurations.",
+      "as_of": "2026-08"
+    },
+    {
+      "cite_id": "facts#role-0",
+      "source_id": "facts",
+      "type": "facts",
+      "heading": "Role Agoda",
+      "text": "Employer: Agoda. Title: Senior Software Engineer from 2023-07 to unspecified. Location: Singapore.",
+      "as_of": "2026-08",
+      "fact_kind": "role",
+      "employer": "Agoda",
+      "title": "Senior Software Engineer"
+    },
+    {
+      "cite_id": "facts#role-1",
+      "source_id": "facts",
+      "type": "facts",
+      "heading": "Role NCS",
+      "text": "Employer: NCS. Title: Senior Software Engineer from 2022-06 to 2023-06. Location: Singapore.",
+      "as_of": "2026-08",
+      "fact_kind": "role",
+      "employer": "NCS",
+      "title": "Senior Software Engineer"
+    },
+    {
+      "cite_id": "facts#role-2",
+      "source_id": "facts",
+      "type": "facts",
+      "heading": "Role Alibaba Group",
+      "text": "Employer: Alibaba Group. Title: Senior Software Engineer from 2021-03 to 2022-06. Location: Vietnam.",
+      "as_of": "2026-08",
+      "fact_kind": "role",
+      "employer": "Alibaba Group",
+      "title": "Senior Software Engineer"
+    },
+    {
+      "cite_id": "facts#role-3",
+      "source_id": "facts",
+      "type": "facts",
+      "heading": "Role VinID",
+      "text": "Employer: VinID. Title: Backend Developer from 2019-07 to 2021-03. Location: Vietnam.",
+      "as_of": "2026-08",
+      "fact_kind": "role",
+      "employer": "VinID",
+      "title": "Backend Developer"
+    },
+    {
+      "cite_id": "facts#role-4",
+      "source_id": "facts",
+      "type": "facts",
+      "heading": "Role Quoine",
+      "text": "Employer: Quoine. Title: Software Engineer from 2017-10 to 2019-07. Location: Vietnam.",
+      "as_of": "2026-08",
+      "fact_kind": "role",
+      "employer": "Quoine",
+      "title": "Software Engineer"
+    },
+    {
+      "cite_id": "facts#education-0",
+      "source_id": "facts",
+      "type": "facts",
+      "heading": "Education HCM University of Technology (VNU)",
+      "text": "B.S.E. in Computer Science & Engineering at HCM University of Technology (VNU) from 2013-09 to 2017-12.",
+      "as_of": "2026-08",
+      "fact_kind": "education"
+    },
+    {
+      "cite_id": "facts#experience-claim-0",
+      "source_id": "facts",
+      "type": "facts",
+      "heading": "Experience claim 8+ years",
+      "text": "Experience-length claim: 8+ years. Copied from the CV summary. No second tenure figure exists in this corpus.",
+      "as_of": "2026-08",
+      "fact_kind": "experience_claim",
+      "claim": "8+ years"
+    }
+  ]
+}

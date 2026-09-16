@@ -1,0 +1,45 @@
+as_of: "2026-08"
+roles:
+  - employer: Agoda
+    title: Senior Software Engineer
+    start: "2023-07"
+    end: unspecified
+    source_id: cv
+    location: Singapore
+    note: CV lists 07/2023 and a blank end date. It does not write Present.
+  - employer: NCS
+    title: Senior Software Engineer
+    start: "2022-06"
+    end: "2023-06"
+    source_id: cv
+    location: Singapore
+  - employer: Alibaba Group
+    title: Senior Software Engineer
+    start: "2021-03"
+    end: "2022-06"
+    source_id: cv
+    location: Vietnam
+  - employer: VinID
+    title: Backend Developer
+    start: "2019-07"
+    end: "2021-03"
+    source_id: cv
+    location: Vietnam
+  - employer: Quoine
+    title: Software Engineer
+    start: "2017-10"
+    end: "2019-07"
+    source_id: cv
+    location: Vietnam
+    note: CV also states promoted to Mid-level Engineer in 03/2019 under this same role heading.
+education:
+  - institution: HCM University of Technology (VNU)
+    degree: B.S.E. in Computer Science & Engineering
+    start: "2013-09"
+    end: "2017-12"
+    source_id: cv
+experience_claims:
+  - claim: "8+ years"
+    source_id: cv
+    heading: Summary
+    note: Copied from the CV summary. No second tenure figure exists in this corpus.
