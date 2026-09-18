@@ -11,3 +11,7 @@ __pycache__/
 dist/
 build/
 .pytest_cache/
+
+# Original CV and other personal dumps — markdown extracts are enough
+*.docx
+*.pdf
